@@ -1,0 +1,10 @@
+Variable names with more than one word can be difficult to read.
+
+There are several techniques you can use to make them more readable:
+
+> CAMEL CASE : Each word, except the first, starts with a capital letter:
+     EG : myVariableName = "John"
+> PASCAL CASE : Each word starts with a capital letter:
+     EG : MyVariableName = "John"
+> SNAKE CASE : Each word is separated by an underscore character:
+    EG : my_variable_name = "John"
