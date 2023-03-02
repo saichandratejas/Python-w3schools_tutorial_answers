@@ -1,0 +1,3 @@
+string="Hello World"
+print(string) #this will print hello statement
+#this is a comment line
