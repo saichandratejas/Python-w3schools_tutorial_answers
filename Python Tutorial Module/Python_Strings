@@ -1,0 +1,20 @@
+Strings in python are surrounded by either single quotation marks, or double quotation marks.
+'hello' is the same as "hello".
+You can display a string literal with the print() function:
+
+>Eg-1:
+#You can use double or single quotes:
+print("Hello")
+print('Hello')
+
+>Eg-2:Single Line String
+a = "Hello"
+print(a)
+
+
+>Eg-3Multi Line String
+a = """Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua."""
+print(a)
