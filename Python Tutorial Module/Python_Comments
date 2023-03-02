@@ -1,3 +1,8 @@
 string="Hello World"
 print(string) #this will print hello statement
 #this is a comment line
+
+
+""" This is a multi-line comment
+which v can use to write comment in more than 2 lines """
+print("Hello World")
