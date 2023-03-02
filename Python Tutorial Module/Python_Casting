@@ -1,0 +1,19 @@
+x = 5
+y = "John"
+print(x)
+print(y)
+
+
+x = 4   # this stores the value in <int format>
+x = "Tejas"  # this stores the value in <string format>
+print(x)
+
+
+x = str(3)    # x will be '3'
+y = int(3)    # y will be 3
+z = float(3)  #z will be 3.0
+
+x = 5
+y = "John"
+print(type(x))  # <int Type>
+print(type(y))  # <string Type>
