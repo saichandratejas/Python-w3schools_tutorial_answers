@@ -1,0 +1,32 @@
+# Global Variables
+> Eg-1 : 
+x = "awesome"
+def myfunc():
+  print("Python is " + x)
+
+myfunc()   # This will provide the output as " Python is awesome "
+
+
+> Eg-2 :
+x = "awesome"
+def myfunc():
+  x = "fantastic"
+  print("Python is " + x)  # This will provide output as " Python is fantastic " as we have used variable inside the function 
+myfunc()
+
+print("Python is " + x)  # This will provide output as " Python is awesome " as we have used global variable 
+
+> Eg-3:
+def myfunc():
+  global x
+  x = "fantastic"
+myfunc()
+print("Python is " + x) # This wil provide the output as "Python is fantastic" as we have declared the value of x as 'global'.
+
+> Eg-4:
+x = "awesome"
+def myfunc():
+  global x
+  x = "fantastic"
+myfunc()
+print("Python is " + x) # This wil provide the output as "Python is fantastic" as we have declared the value of x as 'global'
