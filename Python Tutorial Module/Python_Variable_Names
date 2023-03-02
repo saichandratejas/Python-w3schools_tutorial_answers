@@ -1,0 +1,4 @@
+myvar = "John"
+myvar = "John"
+my_var = "John"
+print(my_var)
