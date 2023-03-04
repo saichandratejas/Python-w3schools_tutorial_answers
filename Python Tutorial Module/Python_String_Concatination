@@ -1,0 +1,14 @@
+String Concatenation
+
+> Eg-1 :
+a = "Hello"
+b = "World"
+c = a + b
+print(c)  # output will be HelloWorld
+
+> Eg-2 :
+To add a space between them, add a " ":
+a = "Hello"
+b = "World"
+c = a +" "+ b
+print(c)  # output will be Hello World
