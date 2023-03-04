@@ -1,0 +1,44 @@
+Python Operators :
+-Operators are used to perform operations on variables and values.
+-In the example below, we use the + operator to add together two values:
+
+> Eg-1:
+print(10 + 5)   #15
+
+> Eg-2:
+x = 5
+y = 3
+print(x + y)   #8
+
+> Eg-3:
+x = 5
+y = 3
+print(x * y)  #15
+
+
+> Eg-4:
+x = 12
+y = 3
+print(x / y)  #4
+
+
+> Eg-5:
+x = 5
+y = 2
+print(x % y)   #1
+
+
+> Eg-6:
+x = 2
+y = 5
+print(x ** y) #same as 2*2*2*2*2  #32
+
+
+> Eg-7: #the floor division // rounds the result down to the nearest whole number
+x = 15
+y = 2
+print(x // y)  #7
+
+
+
+
