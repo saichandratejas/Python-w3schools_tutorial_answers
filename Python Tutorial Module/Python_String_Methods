@@ -1,0 +1,16 @@
+ > String Capitalize()Method :
+ 
+txt = "We are the so-called \"Vikings\" from the north."
+print(txt) 
+
+> CaseFolding :
+
+txt = "Hello, And Welcome To My World!"
+x = txt.casefold()
+print(x)
+
+> String Center :
+
+txt = "banana"
+x = txt.center(20)
+print(x)  # Print the word "banana", taking up the space of 20 characters, with "banana" in the middle:
