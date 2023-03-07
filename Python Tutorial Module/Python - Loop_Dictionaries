@@ -1,0 +1,66 @@
+Loop Through a Dictionary :
+- You can loop through a dictionary by using a for loop.
+- When looping through a dictionary, the return value are the keys of the dictionary, but there are methods to return the values as well.
+
+>Ex-1:
+
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+for x in thisdict:
+  print(x)   #brand
+              model
+              year
+
+
+> Ex-2 :
+
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+for x in thisdict:
+  print(thisdict[x])   #Ford
+                        Mustang
+                        1964
+                        
+
+
+> Ex-3:
+
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+for x in thisdict.values():
+  print(x)   # Foed,Mustang,1964
+  
+  
+  > Ex-4:
+  
+  thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+for x in thisdict.keys():
+  print(x)  # brand,model,year
+  
+  
+  
+  > Ex-5:
+  
+  thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+for x, y in thisdict.items():  # both key value pair output will be produced
+  print(x, y)
+  
+  
+  
