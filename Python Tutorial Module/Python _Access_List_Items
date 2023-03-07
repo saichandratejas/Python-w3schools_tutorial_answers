@@ -1,0 +1,64 @@
+- Access Items
+- List items are indexed and you can access them by referring to the index number:
+
+> Eg-1:
+
+thislist = ["apple", "banana", "cherry"]
+print(thislist[1])  #banana
+
+
+Negative Indexing :
+- Negative indexing means start from the end
+- -1 refers to the last item, -2 refers to the second last item etc.
+
+> Eg-2:
+
+thislist = ["apple", "banana", "cherry"]
+print(thislist[-1])   #cherry
+
+Range of Indexes :
+- You can specify a range of indexes by specifying where to start and where to end the range.
+- When specifying a range, the return value will be a new list with the specified items.
+
+> Eg-3:
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[2:5])   ( # cherry,orange,kiwi )    #This will return the items from position 2 to 5.
+                                                #Remember that the first item is position 0,
+                                                #and note that the item in position 5 is NOT included
+
+> Eg-4:
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[:4])  ( # apple,banana,cherry,orange )
+
+                                          #This will return the items from index 0 to index 4.
+                                          #Remember that index 0 is the first item, and index 4 is the fifth item
+                                          #Remember that the item in index 4 is NOT included
+
+
+Range of Negative Indexes:
+- Specify negative indexes if you want to start the search from the end of the list:
+
+
+> Eg-5:
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[-4:-1])  ( # orange , kiwi , melon )
+
+                                                #Negative indexing means starting from the end of the list.
+                                                #This example returns the items from index -4 (included) to index -1 (excluded)
+                                                #Remember that the last item has the index -1,
+                                                
+                                                
+Check if Item Exists :
+- To determine if a specified item is present in a list use the in keyword: 
+
+> Eg-6:
+
+thislist = ["apple", "banana", "cherry"]
+if "apple" in thislist:
+  print("Yes, 'apple' is in the fruits list")   # "Yes, 'apple' is in the fruits list"
+  
+  
+  
