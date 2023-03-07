@@ -1,0 +1,37 @@
+Remove Item : To remove an item in a set, use the remove(), or the discard() method.
+- Remove "banana" by using the remove() method:
+
+> Eg-1:
+thisset = {"apple", "banana", "cherry"}
+thisset.remove("banana")
+print(thisset)
+
+> Eg-2: Remove "banana" by using the discard() method:
+
+thisset = {"apple", "banana", "cherry"}
+thisset.discard("banana")
+print(thisset)
+
+- You can also use the pop() method to remove an item, but this method will remove a random item, so you cannot be sure what item that gets removed.
+- The return value of the pop() method is the removed item.
+
+> Eg-3: Remove a random item by using the pop() method:
+
+thisset = {"apple", "banana", "cherry"}
+x = thisset.pop()
+print(x)
+print(thisset)
+
+
+> Eg-4 : The clear() method empties the set:
+
+thisset = {"apple", "banana", "cherry"}
+thisset.clear()
+print(thisset)
+
+
+> Eg-5 : The del keyword will delete the set completely:
+
+thisset = {"apple", "banana", "cherry"}
+del thisset
+print(thisset)
