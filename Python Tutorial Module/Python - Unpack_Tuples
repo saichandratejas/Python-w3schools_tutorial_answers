@@ -1,0 +1,28 @@
+Unpacking a Tuple :
+- When we create a tuple, we normally assign values to it. This is called "packing" a tuple:
+
+> Eg-1 : Packing a tuple
+
+fruits = ("apple", "banana", "cherry")
+
+> Eg-2 :
+
+fruits = ("apple", "banana", "cherry")
+(green, yellow, red) = fruits
+print(green)
+print(yellow)
+print(red)    # ("apple", "banana", "cherry")
+
+
+- Using Asterisk* : 
+- If the number of variables is less than the number of values, you can add an * to the variable name and the values will be assigned to the variable as a list:
+- ExampleGet your own Python Server
+- Assign the rest of the values as a list called "red"
+
+> Eg-3 :
+
+fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+(green, yellow, *red) = fruits
+print(green)
+print(yellow)
+print(red)
