@@ -1,0 +1,31 @@
+Access Items :
+- List items are indexed and you can access them by referring to the index number
+
+> Eg-1:
+
+thislist = ["apple", "banana", "cherry"]
+print(thislist[1])   #banana
+
+Negative Indexing:
+- Negative indexing means start from the end
+- -1 refers to the last item, -2 refers to the second last item etc.
+
+> Eg-2:
+
+thislist = ["apple", "banana", "cherry"]
+print(thislist[-1])  # cherry
+
+Range of Indexes:
+- You can specify a range of indexes by specifying where to start and where to end the range.
+- When specifying a range, the return value will be a new list with the specified items.
+
+> Eg-3:
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[2:5])    ( #cherry,orange,kiwi )
+                          #This will return the items from position 2 to 5.
+                          #Remember that the first item is position 0,
+                          #and note that the item in position 5 is NOT included
+                          
+                          
+                          
