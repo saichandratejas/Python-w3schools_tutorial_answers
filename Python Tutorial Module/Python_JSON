@@ -1,0 +1,150 @@
+Python JSON :
+
+- JSON is a syntax for storing and exchanging data.
+- JSON is text, written with JavaScript object notation.
+
+SYNTAX : import json
+
+Eg-1:
+
+import json
+# some JSON:
+x =  '{ "name":"John", "age":30, "city":"New York"}'
+# parse x:
+y = json.loads(x)
+# the result is a Python dictionary:
+print(y["age"])
+
+Convert from Python to JSON :
+- If you have a Python object, you can convert it into a JSON string by using the json.dumps() method.
+
+Eg-2:
+
+import json
+# a Python object (dict):
+x = {
+  "name": "John",
+  "age": 30,
+  "city": "New York"
+}
+# convert into JSON:
+y = json.dumps(x)
+# the result is a JSON string:
+print(y)
+
+
+Eg-3: Convert Python objects into JSON strings, and print the values:
+
+import json
+print(json.dumps({"name": "John", "age": 30}))
+print(json.dumps(["apple", "bananas"]))
+print(json.dumps(("apple", "bananas")))
+print(json.dumps("hello"))
+print(json.dumps(42))
+print(json.dumps(31.76))
+print(json.dumps(True))
+print(json.dumps(False))
+print(json.dumps(None))  #{"name": "John", "age": 30}
+                          ["apple", "bananas"]
+                          ["apple", "bananas"]
+                          "hello"
+                          42
+                          31.76
+                          true
+                          false
+                          null
+
+Eg-4: Convert a Python object containing all the legal data types:
+
+import json
+x = {
+  "name": "John",
+  "age": 30,
+  "married": True,
+  "divorced": False,
+  "children": ("Ann","Billy"),
+  "pets": None,
+  "cars": [
+    {"model": "BMW 230", "mpg": 27.5},
+    {"model": "Ford Edge", "mpg": 24.1}
+  ]
+}
+print(json.dumps(x)) #{"name": "John", "age": 30, "married": true, "divorced": false, "children": ["Ann","Billy"], "pets": null, "cars": [{"model": "BMW 230", "mpg": 27.5}, {"model": "Ford Edge", "mpg": 24.1}]}
+
+
+Eg-5:
+
+import json
+x = {
+  "name": "John",
+  "age": 30,
+  "married": True,
+  "divorced": False,
+  "children": ("Ann","Billy"),
+  "pets": None,
+  "cars": [
+    {"model": "BMW 230", "mpg": 27.5},
+    {"model": "Ford Edge", "mpg": 24.1}
+  ]
+}
+
+# use four indents to make it easier to read the result:
+print(json.dumps(x, indent=4))
+
+Eg-6:
+import json
+x = {
+  "name": "John",
+  "age": 30,
+  "married": True,
+  "divorced": False,
+  "children": ("Ann","Billy"),
+  "pets": None,
+  "cars": [
+    {"model": "BMW 230", "mpg": 27.5},
+    {"model": "Ford Edge", "mpg": 24.1}
+  ]
+}
+# use . and a space to separate objects, and a space, a = and a space to separate keys from their values:
+print(json.dumps(x, indent=4, separators=(". ", " = ")))
+
+
+Eg-7: Use the separators parameter to change the default separator:
+- json.dumps(x, indent=4, separators=(". ", " = "))
+
+import json
+x = {
+  "name": "John",
+  "age": 30,
+  "married": True,
+  "divorced": False,
+  "children": ("Ann","Billy"),
+  "pets": None,
+  "cars": [
+    {"model": "BMW 230", "mpg": 27.5},
+    {"model": "Ford Edge", "mpg": 24.1}
+  ]
+}
+# use . and a space to separate objects, and a space, a = and a space to separate keys from their values:
+print(json.dumps(x, indent=4, separators=(". ", " = ")))   #{
+                                                            "age": 30,
+                                                            "cars": [
+                                                                {
+                                                                    "model": "BMW 230",
+                                                                    "mpg": 27.5
+                                                                },
+                                                                {
+                                                                    "model": "Ford Edge",
+                                                                    "mpg": 24.1
+                                                                }
+                                                            ],
+                                                            "children": [
+                                                                "Ann",
+                                                                "Billy"
+                                                            ],
+                                                            "divorced": false,
+                                                            "married": true,
+                                                            "name": "John",
+                                                            "pets": null
+                                                        }
+                                                                                                  
