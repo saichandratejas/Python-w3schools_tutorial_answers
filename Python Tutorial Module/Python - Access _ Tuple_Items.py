@@ -4,7 +4,8 @@ Access Tuple Items :
 > Eg-1:
 
 thistuple = ("apple", "banana", "cherry")
-print(thistuple[1])    #"apple"
+print(thistuple[1]) #"apple"
+print(thistuple[2]) #"cherry
 
 Negative Indexing :
 - Negative indexing means start from the end.
